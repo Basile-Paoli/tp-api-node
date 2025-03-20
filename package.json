@@ -3,19 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/main.js",
-  "type": "module",
   "scripts": {
     "start": "node dist/main.js",
     "build": "tsc",
-    "dev": "tsx --watch src/main.ts"
+    "dev": "nodemon -e ts --exec ts-node src/main.ts"
   },
   "devDependencies": {
     "@types/express": "^5.0.1",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
     "tsx": "^4.19.3",
     "typescript": "^5.5.3"
   },
   "private": true,
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "pg": "^8.14.1",
+    "typeorm": "^0.3.21"
   }
 }
