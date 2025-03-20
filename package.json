@@ -1,0 +1,21 @@
+{
+  "name": "tp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/main.js",
+    "build": "tsc",
+    "dev": "tsx --watch src/main.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.5.3"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
