@@ -9,8 +9,8 @@ export class Product {
 	@Column()
 	name: string;
 
-	@Column()
-	price: string;
+	@Column({type: 'float'})
+	price: number;
 
 	@CreateDateColumn({type: 'timestamptz'})
 	createdAt: Date;
@@ -18,7 +18,7 @@ export class Product {
 	@UpdateDateColumn({type: 'timestamptz'})
 	updatedAt: Date;
 
-	constructor(id: number, name: string, price: string, createdAt: Date, updatedAt: Date) {
+	constructor(id: number, name: string, price: number, createdAt: Date, updatedAt: Date) {
 		this.id = id;
 		this.name = name;
 		this.price = price;
